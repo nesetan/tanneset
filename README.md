@@ -1,37 +1,103 @@
-## Welcome to GitHub Pages
+# This is the default format.
+# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink: /:categories/:year/:month/:day/:title
 
-You can use the [editor on GitHub](https://github.com/nesetan/tanneset/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+exclude: [".rvmrc", ".rbenv-version", , "Rakefile", "changelog.md", , "Makefile", "Gemfile", "Gemfile.lock"]
+highlighter: rouge
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Themes are encouraged to use these universal variables
+# so be sure to set them if your theme uses them.
+#
+title : Karl Broman
+author :
+  name : Karl Broman
+  email : kbroman@gmail.com
+  github : kbroman
+  twitter : kwbroman
+  feedburner : nil
 
-### Markdown
+production_url : https://kbroman.github.io
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# Tell Github to use the kramdown markdown interpreter
+# (see https://help.github.com/articles/migrating-your-pages-site-from-maruku)
+markdown: kramdown
 
-```markdown
-Syntax highlighted code block
+# All Jekyll-Bootstrap specific configurations are namespaced into this hash
+#
+JB :
+  version : 0.3.0
 
-# Header 1
-## Header 2
-### Header 3
+  # All links will be namespaced by BASE_PATH if defined.
+  # Links in your website should always be prefixed with {{BASE_PATH}}
+  # however this value will be dynamically changed depending on your deployment situation.
+  #
+  # CNAME (http://yourcustomdomain.com)
+  #   DO NOT SET BASE_PATH
+  #   (urls will be prefixed with "/" and work relatively)
+  #
+  # GitHub Pages (http://username.github.io)
+  #   DO NOT SET BASE_PATH
+  #   (urls will be prefixed with "/" and work relatively)
+  #
+  # GitHub Project Pages (http://username.github.io/project-name)
+  #
+  #   A GitHub Project site exists in the `gh-pages` branch of one of your repositories.
+  #  REQUIRED! Set BASE_PATH to: http://username.github.io/project-name
+  #
+  # CAUTION:
+  #   - When in Localhost, your site will run from root "/" regardless of BASE_PATH
+  #   - Only the following values are falsy: ["", null, false]
+  #   - When setting BASE_PATH it must be a valid url.
+  #     This means always setting the protocol (http|https) or prefixing with "/"
 
-- Bulleted
-- List
+  # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
+  # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
+  #
+  # Override this by defining an absolute path to assets here.
+  # ex:
+  #   http://s3.amazonaws.com/yoursite/themes/watermelon
+  #   /assets
+  #
+  # ASSET_PATH : https://kbroman.org/assets/themes/twitter
 
-1. Numbered
-2. List
+  # These paths are to the main pages Jekyll-Bootstrap ships with.
+  # Some JB helpers refer to these paths; change them here if needed.
+  #
+  archive_path: nil
+  categories_path : nil
+  tags_path : nil
+  atom_path : nil
+  rss_path : nil
 
-**Bold** and _Italic_ and `Code` text
+  # Settings for comments helper
+  # Set 'provider' to the comment provider you want to use.
+  # Set 'provider' to false to turn commenting off globally.
+  #
+  comments :
+    provider : false
 
-[Link](url) and ![Image](src)
-```
+  # Settings for analytics helper
+  # Set 'provider' to the analytics provider you want to use.
+  # Set 'provider' to false to turn analytics off globally.
+  #
+  analytics :
+    provider : false
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+  # Settings for sharing helper.
+  # Sharing is for things like tweet, plusone, like, reddit buttons etc.
+  # Set 'provider' to the sharing provider you want to use.
+  # Set 'provider' to false to turn sharing off globally.
+  #
+  sharing :
+    provider : false
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/nesetan/tanneset/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+  # Settings for all other include helpers can be defined by creating
+  # a hash with key named for the given helper. ex:
+  #
+  #   pages_list :
+  #     provider : "custom"
+  #
+  # Setting any helper's provider to 'custom' will bypass the helper code
+  # and include your custom code. Your custom file must be defined at:
+  #   ./_includes/custom/[HELPER]
+  # where [HELPER] is the name of the helper you are overriding.
