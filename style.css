@@ -95,10 +95,20 @@ body {
     margin-left: 260px; /* Same as the width of the sidenav */
     font-size: 28px; /* Increased text to enable scrolling */
     padding: 8px 10px;
-
+    
     background-color: rgba(128, 128, 128, 0.26)
     HighlightText
 }
+@media screen and (max-width: 700px) {
+  .main{
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .main {float: left;}
+  div.content {margin-left: 0;}
+}
+
 .maincv {
     margin-left: 260px; /* Same as the width of the sidenav */
     font-size: 13px; /* Increased text to enable scrolling */
