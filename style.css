@@ -71,7 +71,7 @@ body {
   .sidenav {
     width: 100%;
     height: auto;
-    position: fixed;
+    position: relative;
   }
   .sidenav {float: left;}
   div.content {margin-left: 0;}
