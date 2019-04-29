@@ -73,7 +73,7 @@ body {
     height: auto;
     position: relative;
   }
-  .sidebar a {float: left;}
+  .sidenav a {float: left;}
   div.content {margin-left: 0;}
 }
 
