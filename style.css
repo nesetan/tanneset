@@ -68,7 +68,7 @@ body {
     padding: 8px 10px;
     left: 220px;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .sidenav {
     width: auto;
     height: auto;
@@ -100,18 +100,11 @@ body {
     }
 
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 900px) {
         .main {
             width: auto;
             height: auto;
             position: relative;
-        }
-
-        .main {
-            float: left;
-        }
-
-        div.main {
             margin-left: 0;
         }
     }
@@ -125,32 +118,36 @@ body {
             float: none;
             margin-left: auto;
         }
+    }
 
-        @media screen and (max-width: 400px) {
+    @media screen and (max-width: 400px) {
             .photo {
                 margin-left: auto;
             }
+    }
 
-            @media screen and (max-width: 700px) {
-                .photo {
-                    margin-left: auto;
-                }
+    @media screen and (max-width: 900px) {
+            .photo {
+                margin-left: auto;
+            }
+    }
 
-                @media screen and (max-width: 400px) {
-                    .maincv {
-                        margin-left: auto;
-                    }
-
-                    @media screen and (max-width: 700px) {
-                        .maincv {
-                            margin-left: auto;
-                        }
-                    }
-                }
+        @media screen and (max-width: 400px) {
+            .maincv {
+                margin-left: auto;
             }
         }
-    }
-}
+
+        @media screen and (max-width: 900px) {
+            .maincv {
+                margin-left: auto;
+            }
+        }
+                
+            
+        
+    
+
 
 
 
